@@ -50,7 +50,7 @@ This Website was created for the sole purpose of completing the fourth Milestone
 It was built using the knowledge gained from the HTML, CSS, JavaScript, Python, Django and SQL modules. A full list of technologies used can be found in the technologies section of this document.
 
 The live website can be found [here](https://stuff-express-app.herokuapp.com/)<br>
-![Website Mock Up]() - impossible to generate mock-up yet-> server error
+![Website Mock Up](media/features/website-mockup.png)
 
 ## User Experience (UX)
 
@@ -406,6 +406,8 @@ The User options, search and basket total move next to it.
     * This was used to create wireframes
 * [Wave Accessibility tool](https://wave.webaim.org/)
     * this was used to test the website for accessibility for impaired persons
+* [Techsini](https://techsini.com/multi-mockup/)
+    * used to generate a website mockup for multiple devices
 ***
 
 ## Testing
