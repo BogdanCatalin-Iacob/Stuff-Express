@@ -104,14 +104,21 @@ The live website can be found [here](https://stuff-express-app.herokuapp.com/)<b
     - A Registration page will be provided so the users can register an account
 	    - this gives to user the opportunity to register an account and save a order history, make reviews or delete reviews
 	    - a link to login page is provided at the bottom of the page in case user already has an account<br>
-        The purpose of this is to fulfill user story:
-        > Site user - Easily register an account
+        The purpose of this is to fulfill user stories:
+        > Site user - Easily register an account <br>
+        > Site user - Have a personalized user profile <br>
+    
+    - An email will be sent to the provided email address to confirm the registration <br>
+    The purpose of this is to fulfill user story:<br>
+        > Site user - Receive an email confirmation after registering <br>
 
     - A login page will be provided so any registered user can login 
 	    - this gives to registered user the possibility to create/edit reviews at any time after registration
 	    - a link to register page is provided at the bottom of the page in case the user doesn't have an account already<br>
-        The purpose of this is to fulfill user story:
+        - a link to recover password is provided
+        The purpose of this is to fulfill user stories:
         > Site user - Easily login or logout<br>
+        > Site user - Easily recover my password in case I forget it <br>
 
     - A logout link will be displayed in the navbar for any logged in user
 	    - this is to ensure the user's data are not accessible for other users<br>
@@ -122,11 +129,57 @@ The live website can be found [here](https://stuff-express-app.herokuapp.com/)<b
         The purpose of this is to fulfill user story:
         > Store owner - Add a product<br>
     
+    - All products will have edit / delete buttons available for site admins <br>
+        The purpose of this is to fulfill user story:
+        > Store owner - Edit / Update a product <br>
+        > Store owner - Delete a product <br>
+    
     - An edit review page will be provided for logged in users if the user is the creator of the review<br>
 
     - A profile page will be provided for any logged in user
 	    - the page will display only the order history and saved details<br>
-       
+
+    - A list of products will display all products in the shop. <br>
+        The purpose of this is to fulfill user story: <br>
+        > Shopper - View a list of products <br>
+    
+    - A list of categories is displayed at the top of the page <br>
+        The purpose of this is to fulfill user stories: <br>
+        > Shopper - View a specific category of products <br>
+        > Shopper - Quickly identify deals and special offers <br>
+    
+    - A sorting by price, name, category name is provided on products page <br>
+        The purpose of this is to fulfill user stories: <br>
+        > Shopper - Sort multiple categories of products <br>
+        > Sort a specific category of products <br>
+        
+    - A search box is provided at the top of the page.<br>
+        The purpose of this is to fulfill user story: <br>
+        > Shopper - Search for a product by name or description <br>
+    
+    - A page to display details about individual products is available <br>
+        The purpose of this is to fulfill user stories: <br>
+        > Shopper - View individual product details <br>
+        > Shopper - Easily select the size and quantity of a product when purchasing it <br>
+    
+    - A total price of the items added to the bag is displayed at all times in the top right corner of all pages <br>
+        > Shopper - Easily view the total price of my purchases at any time <br>
+
+    - A bag bag is provided to display all the added items with possibility to adjust the quantity or delete the items <br>
+        The purpose of this is to fulfill user stories: <br>
+        > Shopper - Easily select the size and quantity of a product when purchasing it <br>
+        > Shopper - Adjust the quantity of individual items in my bag <br>
+    
+    - A user information form is provided for checkout. An option to save payment informations is available for logged in users <br>
+        The purpose of this is to fulfill user stories: <br>
+        > Shopper - Easily enter my payment information <br>
+        > Shopper - Feel my personal and payment information is safe and secure <br>
+    
+    - A confirmation page will be displayed and a confirmation email will be sent after checkout <br>
+        The purpose of this is to fulfill user story: <br>
+        > Shopper - View and order confirmation after checkout <br>
+        > Shopper - Receive an email confirmation after checking out <br>
+    
 -   ### Design
     -   #### Colour Scheme
         - The main colour of the site is white
