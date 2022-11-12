@@ -253,115 +253,122 @@ The live website can be found [here](https://stuff-express-app.herokuapp.com/)<b
 ## Features
  
 -   ### Existing Features
-    - Navigation Bar
-    ![Navbar](media/features/navbar.png)
+    - Navigation Bar <br>
+        ![Navbar](media/features/navbar.png)
 
-    - Registration form
-    ![Registration](media/features/register.png)
+        - The navigation bar is fixed in position at the top of the page. <br>
+        It includes: 
+            1) The company logo which is also a link to the home page.
+            2) Links to the other available pages on the site e.g. the shop or products, the basket and the user options which vary on login.
+            3) A running total of the contents of the customers virtual shopping basket. This doubles as a link to the basket page.
+            4) A search bar to search through all the products name and description.
 
-    - Footer
-    ![Footer](media/features/footer.pngg)
+        - The user options are represented by a font awesome icon which on click displays a dropdown menu with the following options:
+            1) If the user is staff then Product management.
+            2) If user signed in then the user name is displayed and a logout link
+            3) If no user is logged in then both a register and login option are presented. <br>
 
+        - The navigation bar is fully responsive and the links are replaced on smaller screens with a hamburger icon.    
+        - The User options, search and basket total move next to it.
+            ![Mobile navbar](media/features/mobile-navbar.png)
+    
+    - Search box <br>
+        ![Search box](media/features/search.png)
+        - The search box allows searching of the products name and description for a keyword.    
+        - This is hidden on smaller screens and drops to the second line when 'Search' icon is touched so it becomes available when needed.
 
-The navigation bar is fixed in position at the top of the page.
-It includes 
-1) The company logo which is also a link to the home page.
-2) Links to the other available pages on the site e.g. the shop or products, the basket and the user options which vary on login.
-3) A running total of the contents of the customers virtual shopping basket. This doubles as a link to the basket page.
-4) A search bar to search through all the products name and description.
+    - Registration form <br>
+        ![Registration](media/features/register.png)
 
-The user options are represented by a font awesome icon which on click displays a dropdown menu with the following options:-
-1) If the user is staff then Product management.
-2) If user signed in then the user name is displayed and a logout link
-3) If no user is logged in then both a register and login option are presented.
+    - Footer <br>
+        ![Footer](media/features/footer.png)
 
-The navigation bar is fully responsive and the links are replaced on smaller screens with a hamburger icon.    
-The User options, search and basket total move next to it.
+        - The footer features the businesses email and a link to their social pages.
 
-### Search box
--   The search box beside the logo alows searching of the products name and description for a keyword.    
--   This drops to the second line on smaller screens so it is always easily accessible.
--   This example shows the results of the search for the cheese keyword. The wine is shown also because it has the word cheese in its description.
+    - Shop <br>
+        ![Products list](media/features/products-list.png)
 
+        - This page displays all the products that are available to purchase on the site.
+        - This page also has a filter and sort feature which allows users to display the products in a certain category only.
 
+    - Product Details <br>
+        ![Product details](media/features/product-details.png)
 
+        - Clicking on a product displays the full details for that item.
+        - Only the appropriate details appear for the product 
+        - Also, only filled in details are shown. Blank fields are not displayed on the screen.
+        - There is a quantity field that takes a number and an `Add to bag` button to select this product for purchase.
+        - The user can type in an amount or use the arrow buttons which don't go below 1.
+        - When an item is added to the basket a success message appears informing the user.    
+        - It also summarises the contents of the basket and shows the total excluding delivery.    
+        - There is also a button to go to checkout. A secure payment facilitiy is indicated by displaying a lock item on the button.
+        - The message can be dismisses by clicking the x but it also disappears by itself after a few seconds.
 
-### Footer
+    - Authentication <br>
+        ![Authentication](media/features/authentication.png)
 
+        - If the user is not logged in then they have the option to either register or login.
+        ![Login](media/features/login.png)
+        ![Register](media/features/register.png)
 
--   The footer features the businesses email and a link to their social pages.
+        - If the user is logged in they have the option to logout. <br>
+        ![Logout](media/features/logout.png)
+        ![Logout Confirmation](media/features/logout-conf.png)
 
-### Shop
+    - Shopping Basket <br>
+        ![Bag link](media/features/bag-cost.png)
 
--   This page displays all the products that are available to purchase on the site.
+        - If the users virtual shopping bag is empty then this page will just display a message that the bag is empty and     
+        provide a link back to the Shop or Products page.
+        ![Empty bag](media/features/empty-bag.png)
 
--   This page also has a filter and sort feature which allows users to display the products in a certain category only
+        - If there are items in the basket then these are listed displaying the core details for the product and the quantity selected.  
+        - A small image of the product is displayed.    
+        - The sub-total is displayed (Quantity * Price).  
+        ![Bag items](media/features/bag-products-and-total.png)  
+        - At this point the user can change the quantity of any item in the basket or remove it entirely.    
+        - If the quanity is changed then the sub-total is recalculated and a feedback message displayed.    
+        - The basket total is also displayed with the delivery charge and the grand total.    
+        - These are re-calulated as item quantities change.    
+        - There is a button link back to the shop or product page and a button link to continue to checkout.    
 
-### Product Details
-
--   Clicking on a product displays the full details for that item.
--   Only the appropriate details appear for the product 
--   Also, only filled in details are shown. Blank fields are not displayed on the screen.
--   There is a quantity field that takes a number and an `Add to basket` button to select this product for purchase.
--   The user can type in an amount or use the arrow buttons which don't go below 1.
--   When an item is added to the basket a success message appears informing the user.    
--   It also summarises the contents of the basket and shows the total excluding delivery.    
--   There is also a button to go to checkout. A secure payment facilitiy is indicated by displaying a lock item on the button.
--   The message can be dismisses by clicking the x but it also disappears by itself after a few seconds.
-
-### Authentication
-
--   If the user is not logged in then they have the option to either register or login.
--   If the user is logged in they have the option to logout.
-
-### Shopping Basket
-
--   If the users virtual shopping basket is empty then this page will just display a message that the basket is empty and     
-    provide a link back to the Shop or Products page.
-
-
--   If there are items in the basket then these are listed displaying the core details for the product and the quantity selected.    
-    A small image of the product is displayed.    
-    The sub-total is displayed (Quantity * Price).    
-    At this point the user can change the quantity of any item in the basket or remove it entirely.    
-    If the quanity is changed then the sub-total is recalculated and a feedback message displayed.    
-    The basket total is also displayed with the delivery charge and the grand total.    
-    These are re-calulated as item quantities change.    
-
--   There is a button link back to the shop or product page and a button link to continue to checkout.    
-
-### Checkout
-
--   The checkout page provides a form for users to fill in with their details.
--   It also contains a summary of the items in the basket which will be used to create the order.
--   The totals for the order are displayed.
--   A stripe card element is used on this page to collect the card details.    
-    Javascript is used to 
-    1) Mount and style the card element
-    2) Display any feedback errors received
-    3) Handle form submit
--   There is a button provided for confirming the payment. It displays a lock icon to indicate security. 
--   There is also a little summary message in red displayed with the total amount that will be charged to the card on confirming the payment.
--   There is a button link provided at this point to return to the basket for making adjustments.
--   If logged in the user can choose to save their delivery details which are defaulted on the checkout page for them.
-
-
--   If the card details are incorrect an error message is displayed    
-  
--   If the details are correct a spinner is displayed while the order is being processed.
+    - Checkout <br>
+    ![Checkout](media/features/checkout.png)
+        - The checkout page provides a form for users to fill in with their details.
+        - It also contains a summary of the items in the basket which will be used to create the order.
+        - The totals for the order are displayed.
+        - A stripe card element is used on this page to collect the card details.    
+            Javascript is used to 
+            1) Mount and style the card element
+            2) Display any feedback errors received
+            3) Handle form submit
+        - There is a button provided for confirming the payment. It displays a lock icon to indicate security. 
+        - There is also a little summary message in red displayed with the total amount that will be charged to the card on confirming the payment.
+        - There is a button link provided at this point to return to the basket for making adjustments.
+        - If logged in the user can choose to save their delivery details which are defaulted on the checkout page for them.
+        - If the card details are incorrect an error message is displayed
+        ![Invalid card](media/features/invalid-card.png)  
+        - If the details are correct a spinner is displayed while the order is being processed.
  
-### Checkout confirmation
--   The checkout confirmation page provides a summary of the order for users and a link back to the shop.
+    - Checkout confirmation <br>
+        ![Checkout confirmation](media/features/checkout-confirmation.png)
+        - The checkout confirmation page provides a summary of the order for users and a link back to the shop.
 
-### Deals
--   This is option from the nav menu which takes users directly to the products filtered by deals.    
+    - Special offers <br>
+        ![Special offers](media/features/special-offers-category.png)
+        - This is option from the nav menu which takes users directly to the products filtered by deals.    
 
-### My Profile
+    - My Profile <br>
+        ![Profile](media/features/profile-page.png)
+        - The profile page allows the user to edit their delivery details and view their previous orders.
+        - A feedback message is sent when the profile is updated.
+        - A list of all orders (if any have been made) will be displayed
+        - On clicking the order number the confirmation screen is shown with a button back to the profile page
 
--   The profile page allows the user to edit their delivery details and view their previous orders.
--   A feedback message is sent when the profile is updated.
-
--   On clicking the order number the confirmation screen is shown with a button back to the profile page
+    - Contact <br>
+        ![Contact page](media/features/contact-page.png)
+        - A contact page is provided for website users (registered or not).
+        - The contact page is accessible by clicking/touching the mail icon found in the page footer
 
 -   ### Features Left to Implement
 
