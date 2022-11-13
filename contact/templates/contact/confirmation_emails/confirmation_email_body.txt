@@ -7,7 +7,7 @@ Mean while check our store at https://stuff-express-app.herokuapp.com/
 
 If you have any questions, feel free to contact us at {{ contact_email }}.
 
-Thank you for you order!
+Thank you for your patience!
 
 Sincerely,
 Stuff Express
