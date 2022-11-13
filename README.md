@@ -23,9 +23,7 @@
 * [Technologies](#Technologies)
 * [Testing](#Testing)
     * [Test Strategy](#Test-Strategy)
-      * [Summary](#Summary)
     * [Test Results](#Test-Results)
-    * [Testing Issues](#Issues-and-Resolutions-to-issues-found-during-testing)
 * [Deployment](#Deployment)
     * [Project creation](#project-creation)
     * [Deploying on Heroku](#deploying-on-heroku)
@@ -40,9 +38,7 @@
     * [Run the app](#to-run-the-application)
       * [Run locally](#run-locally)
 * [Credits](#Credits)
-    * [Code](#Code)
     * [Content](#Content)
-    * [Media](#Media)
     * [Acknowledgements](#Acknowledgements)
 
 ## Purpose
@@ -473,45 +469,78 @@ The live website can be found [here](https://stuff-express-app.herokuapp.com/)<b
 ## Testing
 
 -   ### Test Strategy 
-
-    -   #### Summary 
+    - All user stories must be tested
+    - Manual testing will be done on three different browsers: Chrome, Mozilla, Opera
+    - HTML will be validated on https://validator.w3.org/
+    - CSS will be validated on https://jigsaw.w3.org/css-validator/
+    - Javascript will be validated on https://jshint.com/
+    - Python will be validated using built-in 'pycodestyle'
 
     -   ### Test Results
         - Deployed version has some differences compare to development version
 
-    - All Pages were run through the [W3C HTML Validator](https://validator.w3.org/) and showed no errors.<br>
+        - All Pages were run through the [W3C HTML Validator](https://validator.w3.org/) and showed no errors.<br>
    
-    - CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and showed no errors.<br>
+        - CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and showed no errors.<br>
    
-    - Js files were run through [JSHint](https://jshint.com/) and showed no errors.<br>
+        - Js files were run through [JSHint](https://jshint.com/) and showed no errors.<br>
     
-    - Python files were run through [Pep8](http://pep8online.com/) and showed no errors.<br>
+        - Python files were checked with 'pycodestyle' and showed no errors.<br>
     
-    - Website was tested by running locally and tested on the deployed version on three different browsers:
+        - Website was tested by running locally and tested on the deployed version on three different browsers:
        
-    - Test header's logo to redirect to home.html (on all pages) - worked as expected on all tested browsers
+        - Test header's logo to redirect to home.html (on all pages) - worked as expected on all tested browsers
 
-    - Navbar displays: 
+        - Navbar displays: 
       
-    - Navbar on mobile: 
+        - Navbar on mobile: 
        
-    - Home page has two images with links:
+        - Home page has two images with links:
         
-    - Register form:
-	   
-    - Login form:
-	   
-    - Log out
+        - Register form:
         
-    - Footer: 
-       
+        - Login form:
+        
+        - Log out
+            
+        - Footer: 
 
--   ### Issues and Resolutions to issues found during testing
-
-
-        - #### Known bugs/errors not fixed
-   
-
+       | No | Test | Description | Pass / Fail | Fix | Pass / Fail |
+       |----|------|-------------|-------------|-----|-------------|
+       |  1 | View a list of  products |All products should be displayed on a single page | Pass | - | - |
+       |  2 | View a specific category of products | Products from selected category should be displayed on a single page if any exists| Pass | - | - |
+       |  3 | View individual product details | A page showing the product details including product reviews and a button to add it to the shopping bag | Pass | - | - |
+       |  4 |Quickly identify deals and special offers | A dedicated link to 'Special Offers' is available at all times in the navbar (or mobile dropdown list) | Pass | - | - |
+       |  5 |Easily view the total price of my purchases at any time | A bag with the total price of the purchase is displayed at all times in the top right corner of the website | Pass | - | - |
+       |  6 |Easily register an account | Dedicated page to register new users | Failed | Password validators in settings.py were wrongly formated -> I added a new variable to hold the common part of the validators path and concatenated it with the unique part of the paths for each validator | Pass |
+       |  7 | Easily login or logout | Dedicated links and page to login / logout for registered users | Pass | - | - |
+       |  8 | Easily recover my password in case i forget it | A link to reset password is provided on login page. An email to reset password will be sent with a link to password reset page | Pass | - | - |
+       |  9 | Receive an email confirmation after registering | An confirmation email is sent to confirm and complete registration | Pass | - | - | 
+       | 10 | Have a personalized user profile | A page containing user's details and orders history is available and accessible via a link under 'My Account' dropdown list | Pass | - | - |
+       | 11 |Sort the list of available products | Sorting options are available and functional on all pages dedicated to products | Pass | - | - |
+       | 12 |Sort a specific category of products | Navbar  ( mobile dropdown list) has dedicated category links displaying only specific products to category | Pass | - | - |
+       | 13 |Sort multiple categories of products | Sorting options are available and functional on all pages dedicated to products | Pass | - | - |
+       | 14 |Search for a product by name or description | A search box is provided at the top of the website and available at all times (on mobile is hidden until requested by touching the magnifying glass) | Pass | - | - |
+       | 15 |Easily see what I've searched for and the number of results | Products page will display only the results meeting the search keyword and at the top of the list will be displayed the number of results if any | Pass | - | - |
+       | 16 |Easily select the size and quantity of a product when purchasing it | On details page size selector will be available for the products that have sizes and a quantity selector for all products. The quantity cannot be less than 1 | Pass | - | - |
+       | 17 | View items in my basket | A shopping bag page  is available and displays all the added items with sizes (if any) and quantities | Pass | - | - |
+       | 18 | Adjust the quantity of individual items in my bag | Shopping bag page provides the options to update the quantity of an item or delete the item completely from the bag  with immediate effect on the total price | Pass | - | - |
+       | 19 | Easily enter my payment information | Checkout Page provides a form to add delivery and payment information (prefilled if the user saved the information on profile) | Pass | - | - |
+       | 20 |Feel my personal and payment information is safe and secure | Access for the user's information is possible only if the user is logged in | Pass | - | - |
+       | 21 |View an order confirmation after checkout | After checkout is completed a page with order details is displayed | Pass | - | - |
+       | 22 |Receive an email confirmation after checking out | After checkout is completed an email containing information about the order is sent to user's email address | Pass | - | - |
+       | 23 |Add a product | Add product is available only for admins | Pass | - | - |
+       | 24 |Edit/ update a product | Editing products is available only for admins | Pass | - | - |
+       | 25 |Delete a product |cDeleting products is available only for admins | Pass | - | - |
+       | 26 | Update profile information | A form with user's details is available on profile page and a button to update the new details. A message is displayed  in the top right corner to confirm the update | Pass | - | - |
+       | 27 | Back to top of the page | An arrow button is provided on products page to send the user back to the top of the page | Pass | - | - |
+       | 28 | Write reviews of products | On Details page of each product a review section is available and usable only by logged in users | Pass | - | - |
+       | 29 | Edit / Delete reviews | Edit / Delete buttons for reviews will be available only for the original review writer | Pass | - | - |
+       | 30 | Review update confirmation | A message is displayed in the top right corner to confirm the change | Pass | - | - |
+       | 31 | Social media links | Must open in a new browser tab | Pass | - | - |
+       | 32 | Contact | Email contact is available via mail icon in the footer and is available for all types of users (registered or not). A contact form is provided. | Fail | Pass in development version, Fail in deployed version. The database migrations were missing for the contact model in deployed version. Migrating the updates to the deployed database fixed the issue | Pass | 
+       | 33 | Contact confirmation | An email to confirm the message was received by site admins will be sent after successfully submited the contact form. Also a message will be displayed in the top right corner to confirm the submission of the form | Pass | - | - |
+       | 34 | Cancel contacting the admins | A 'Cancel button is provided at the bottom of contact form and redirects to products page | Pass | - | - |
 ***
 ## Deployment
 
@@ -700,15 +729,9 @@ To deploy this page to Heroku from its GitHub repository, the following steps we
     1. A clone of the project will be created locally on your machine.
 
 ***
-## Credits
--   ### Code
-   
-
 -   ### Content
+    - images used for products were taken from [Pexels](https://www.pexels.com/)
+    - icons used across the site were taken from [FontAwesome](https://fontawesome.com/)
     
-    
--   ### Media
-   
-
 -   ### Acknowledgements
     - I'd like to thank my mentor Daisy McGirr for her guidance throughout my project.<br>
