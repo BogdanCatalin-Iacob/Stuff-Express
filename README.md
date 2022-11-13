@@ -541,6 +541,7 @@ The live website can be found [here](https://stuff-express-app.herokuapp.com/)<b
        | 40 | Registration valid inputs | Check valid password confirmation | Pass | - | - |
        | 41 | Login inputs | Check for valid existing user and password | Pass | - | - |
        | 42 | Contact form inputs | Check for required inputs | Pass | - | - |
+       | 43 | 404 error | Check if 404 error page is displayed if the requested path doesn't exist | Pass | - | - |
 ***
 ## Deployment
 
