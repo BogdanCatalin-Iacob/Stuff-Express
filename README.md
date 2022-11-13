@@ -482,30 +482,19 @@ The live website can be found [here](https://stuff-express-app.herokuapp.com/)<b
         - All Pages were run through the [W3C HTML Validator](https://validator.w3.org/) and showed no errors.<br>
             ![HTML validation](media/validators/html_validation/html_validation1.JPG)
             ![HTML validation](media/validators/html_validation/html_validation2.JPG)
-   
-        - CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and showed no errors.<br>
-   
-        - Js files were run through [JSHint](https://jshint.com/) and showed no errors.<br>
-    
-        - Python files were checked with 'pycodestyle' and showed no errors.<br>
-    
-        - Website was tested by running locally and tested on the deployed version on three different browsers:
-       
-        - Test header's logo to redirect to home.html (on all pages) - worked as expected on all tested browsers
 
-        - Navbar displays: 
-      
-        - Navbar on mobile: 
-       
-        - Home page has two images with links:
-        
-        - Register form:
-        
-        - Login form:
-        
-        - Log out
-            
-        - Footer: 
+        - CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and showed no errors. <br>
+            ![CSS Validation](media/validators/css/css_validation.JPG)
+
+        - Js files were run through [JSHint](https://jshint.com/) and showed no errors.<br>
+            ![JS Validation](media/validators/js/js_validation.JPG)
+
+        - Python files were checked with 'pycodestyle' and showed no errors.<br>
+            ![Python validation](media/validators/python/python_validate_1.JPG)
+            ![Python validation](media/validators/python/python_validate_2.JPG)
+            ![Python validation](media/validators/python/python_validate_3.JPG)
+
+        - Website was tested by running locally and tested on the deployed version on three different browsers: Chrome, Mozilla, Opera
 
        | No | Test | Description | Pass / Fail | Fix | Pass / Fail |
        |----|------|-------------|-------------|-----|-------------|
@@ -543,6 +532,15 @@ The live website can be found [here](https://stuff-express-app.herokuapp.com/)<b
        | 32 | Contact | Email contact is available via mail icon in the footer and is available for all types of users (registered or not). A contact form is provided. | Fail | Pass in development version, Fail in deployed version. The database migrations were missing for the contact model in deployed version. Migrating the updates to the deployed database fixed the issue | Pass | 
        | 33 | Contact confirmation | An email to confirm the message was received by site admins will be sent after successfully submited the contact form. Also a message will be displayed in the top right corner to confirm the submission of the form | Pass | - | - |
        | 34 | Cancel contacting the admins | A 'Cancel button is provided at the bottom of contact form and redirects to products page | Pass | - | - |
+       | 35 | Navigate to home page | Website logo in the top left corner ('Home' link on mobile) redirect to home page | Pass | - | - |
+       | 35 | Navbar to easy navigate throughout the site | Navbar has links to main categories with dropdowns for subcategories and redirect accordingly| Pass | - | - |
+       | 36 | Registration valid inputs | Check valid email format | Pass | - | - |
+       | 37 | Registration valid inputs | Check valid email confirmation to be the same as first one | Pass | - | - |
+       | 38 | Registration valid inputs | Check valid username length to be min 4 characters | Pass | - | - |
+       | 39 | Registration valid inputs | Check valid password length to be min 8 characters | Pass | - | - |
+       | 40 | Registration valid inputs | Check valid password confirmation | Pass | - | - |
+       | 41 | Login inputs | Check for valid existing user and password | Pass | - | - |
+       | 42 | Contact form inputs | Check for required inputs | Pass | - | - |
 ***
 ## Deployment
 
