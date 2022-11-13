@@ -30,18 +30,18 @@ def contact(request):
             messages.success(request, "Thank you! \
                 Your message was successfully sent.\
                 We'll get in touch soon!")
+
+            # send email
+            send_mail(
+                email_subject,
+                email_body,
+                settings.DEFAULT_FROM_EMAIL,
+                [user_email])
             return redirect(reverse('products'))
         else:
             messages.error(request, 'Your message was not sent!\
                 Please, try again.')
             return redirect(reverse('contact'))
-
-        # send email
-        send_mail(
-            email_subject,
-            email_body,
-            settings.DEFAULT_FROM_EMAIL,
-            [user_email])
 
     form = ContactForm()
 
