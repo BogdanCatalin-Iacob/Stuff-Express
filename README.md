@@ -477,9 +477,11 @@ The live website can be found [here](https://stuff-express-app.herokuapp.com/)<b
     - Python will be validated using built-in 'pycodestyle'
 
     -   ### Test Results
-        - Deployed version has some differences compare to development version
+        - Deployed version has no differences compare to development version
 
         - All Pages were run through the [W3C HTML Validator](https://validator.w3.org/) and showed no errors.<br>
+            ![HTML validation](media/validators/html_validation/html_validation1.JPG)
+            ![HTML validation](media/validators/html_validation/html_validation2.JPG)
    
         - CSS Stylesheet was run through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and showed no errors.<br>
    
