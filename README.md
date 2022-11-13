@@ -200,7 +200,7 @@ The live website can be found [here](https://stuff-express-app.herokuapp.com/)<b
         ![Bag page](media/MS4_wireframes/Slide8.JPG)
         
     -   #### Database
-        ![Database schema](media/database_schema.png)
+        ![Database schema](media/db-schema.png)
 
         ##### User Profile Model
         
